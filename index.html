@@ -172,53 +172,6 @@
     <i class="fas fa-chevron-up"></i>
   </button>
 
-  <!-- More Works Dropdown -->
-  <div class="more-works-container">
-    <button class="more-works-btn" onclick="toggleMoreWorks()" title="View More Works from Our Lab">
-      <i class="fas fa-flask"></i>
-      More Works
-      <i class="fas fa-chevron-down dropdown-arrow"></i>
-    </button>
-    <div class="more-works-dropdown" id="moreWorksDropdown">
-      <div class="dropdown-header">
-        <h4>More Works from Our Lab</h4>
-        <button class="close-btn" onclick="toggleMoreWorks()">
-          <i class="fas fa-times"></i>
-        </button>
-      </div>
-      <div class="works-list">
-        <!-- TODO: Replace with your lab's related works -->
-        <a href="https://arxiv.org/abs/PAPER_ID_1" class="work-item" target="_blank">
-          <div class="work-info">
-            <!-- TODO: Replace with actual paper title -->
-            <h5>Paper Title 1</h5>
-            <!-- TODO: Replace with brief description -->
-            <p>Brief description of the work and its main contribution.</p>
-            <!-- TODO: Replace with venue and year -->
-            <span class="work-venue">Conference/Journal 2024</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-        <!-- TODO: Add more related works or remove extra items -->
-        <a href="https://arxiv.org/abs/PAPER_ID_2" class="work-item" target="_blank">
-          <div class="work-info">
-            <h5>Paper Title 2</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2023</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-        <a href="https://arxiv.org/abs/PAPER_ID_3" class="work-item" target="_blank">
-          <div class="work-info">
-            <h5>Paper Title 3</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2023</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-      </div>
-    </div>
-  </div>
 
   <main id="main-content">
   <section class="hero">
@@ -226,34 +179,30 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">PP-Motion: Physical-Perceptual Fidelity Evaluation for Human Motion Generation</h1>
-            <div class="is-size-5 publication-authors">
-              <span class="author-block"><a href="#" target="_blank">Sihan Zhao</a><sup>*</sup>,</span>
-              <span class="author-block"><a href="#" target="_blank">Zixuan Wang</a><sup>*</sup>,</span>
-              <span class="author-block"><a href="#" target="_blank">Tianyu Luan</a><sup>†</sup>,</span>
-              <span class="author-block"><a href="#" target="_blank">Jia Jia</a><sup>†</sup>,</span>
-              <span class="author-block"><a href="#" target="_blank">Wentao Zhu</a>,</span>
-              <span class="author-block"><a href="#" target="_blank">Jiebo Luo</a>,</span>
-              <span class="author-block"><a href="#" target="_blank">Junsong Yuan</a>,</span>
-              <span class="author-block"><a href="#" target="_blank">Nan Xi</a></span>
+            <!-- Title -->
+            <h1 class="title is-1 publication-title" style="margin-bottom: 1rem;">
+              PP-Motion: Physical-Perceptual Fidelity Evaluation for Human Motion Generation
+            </h1>
 
-            <div class="is-size-6 publication-authors">
-                <span class="author-block">Tsinghua University • University at Buffalo<br>ACM MM 2025, Dublin</span>
-                <span class="eql-cntrb"><small><br><sup>*</sup>Equal Contribution &nbsp;&nbsp; <sup>†</sup>Co-corresponding Authors</small></span>
-            </div>
-              <span class="author-block"><a href="#" target="_blank">Sihan Zhao</a><sup>*</sup>,</span>
-              <span class="author-block"><a href="#" target="_blank">Zixuan Wang</a><sup>*</sup>,</span>
-              <span class="author-block"><a href="#" target="_blank">Tianyu Luan</a><sup>†</sup>,</span>
-              <span class="author-block"><a href="#" target="_blank">Jia Jia</a><sup>†</sup>,</span>
-              <span class="author-block"><a href="#" target="_blank">Wentao Zhu</a>,</span>
-              <span class="author-block"><a href="#" target="_blank">Jiebo Luo</a>,</span>
-              <span class="author-block"><a href="#" target="_blank">Junsong Yuan</a>,</span>
-              <span class="author-block"><a href="#" target="_blank">Nan Xi</a></span>
+            <!-- Authors -->
+            <div class="authors" style="font-size: 1.1rem; line-height: 2rem;">
+              <span class="author-block"><a href="#" target="_blank">Sihan Zhao</a><sup>*1</sup>,</span>
+              <span class="author-block"><a href="#" target="_blank">Zixuan Wang</a><sup>*1</sup>,</span>
+              <span class="author-block"><a href="#" target="_blank">Tianyu Luan</a><sup>†2</sup>,</span>
+              <span class="author-block"><a href="#" target="_blank">Jia Jia</a><sup>†1</sup>,</span>
+              <span class="author-block"><a href="#" target="_blank">Wentao Zhu</a><sup>3</sup>,</span>
+              <span class="author-block"><a href="#" target="_blank">Jiebo Luo</a><sup>4</sup>,</span>
+              <span class="author-block"><a href="#" target="_blank">Junsong Yuan</a><sup>2</sup>,</span>
+              <span class="author-block"><a href="#" target="_blank">Nan Xi</a><sup>2</sup></span>
             </div>
 
-            <div class="is-size-6 publication-authors">
-              <span class="author-block">Tsinghua University • University at Buffalo<br>ACM MM 2025, Dublin</span>
-              <span class="eql-cntrb"><small><br><sup>*</sup>Equal Contribution &nbsp;&nbsp; <sup>†</sup>Co-corresponding Authors</small></span>
+            <!-- Affiliations -->
+            <div class="affiliations" style="font-size: 1rem; color: #666; margin-top: 0.5rem; line-height: 1.6rem;">
+              <sup>1</sup> Tsinghua University, Beijing, China<br>
+              <sup>2</sup> University at Buffalo, Buffalo, NY, USA<br>
+              <sup>3</sup> Eastern Institute of Technology, Ningbo, China<br>
+              <sup>4</sup> University of Rochester, Rochester, NY, USA
+              <span class="eql-cntrb"><br><sup>*</sup>Equal Contribution &nbsp;&nbsp; <sup>†</sup>Co-corresponding</span>
             </div>
 
             <div class="column has-text-centered">
@@ -344,26 +293,21 @@
           <p>
             PP-Motion takes a motion sequence as input, encodes it into spatio-temporal features, and decodes them into a fidelity score. The training is supervised by two complementary signals. On one hand, we use human perceptual labels and apply a ranking loss that ensures human-preferred motions receive higher scores. On the other hand, we use fine-grained physical annotations and apply a correlation loss that aligns predictions with continuous physics-based labels. Specifically, we adopt Pearson correlation loss, which focuses on relative consistency and captures physical priors more effectively than simple regression. Together, these objectives enable the model to capture both perceptual realism and physical feasibility.
           </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Method</h2>
-        <div class="content has-text-justified">
-          <p>
-            PP-Motion takes a motion sequence as input, encodes it into spatio-temporal features, and decodes them into a fidelity score. The training is supervised by two complementary signals. On one hand, we use human perceptual labels and apply a ranking loss that ensures human-preferred motions receive higher scores. On the other hand, we use fine-grained physical annotations and apply a correlation loss that aligns predictions with continuous physics-based labels. Specifically, we adopt Pearson correlation loss, which focuses on relative consistency and captures physical priors more effectively than simple regression. Together, these objectives enable the model to capture both perceptual realism and physical feasibility.
+          <p style="text-align: center;">
+            <img src="static/images/pipeline.jpg" alt="Results" style="max-width: 100%; height: auto;">
+            <br>
+            <span style="font-size: 1.0rem; color: #555;">Figure: Overview of the PP-Motion training framework combining perceptual and physical supervision.</span>
           </p>
 
-          <figure class="image is-3by2">
-            <img src="static/images/pipeline.jpg" alt="Overview of PP-Motion framework">
-            <figcaption>Figure: Overview of the PP-Motion framework combining perceptual and physical supervision.</figcaption>
-          </figure>
+          <!-- <figure class="image" style="width: 100%; text-align: center;">
+            <img src="static/images/pipeline.jpg" 
+                 alt="Overview of PP-Motion framework" 
+                 style="max-width: 100%; height: auto; border-radius: 10px;">
+            <figcaption style="margin-top: 8px;">
+              Figure: Overview of the PP-Motion training framework combining perceptual and physical supervision.
+            </figcaption>
+          </figure> -->
 
         </div>
       </div>
@@ -380,20 +324,19 @@
           <p>
             We build upon the MotionPercept dataset, which provides human perceptual labels. To add physical supervision, we generate new annotations with a physics simulator. For each motion, we train a correction network with reinforcement learning that makes only minimal adjustments until the motion conforms to physical laws. In practice, we consider a motion to follow physical laws if it can be successfully simulated in the physics engine.
           </p>
-
           <figure>
             <div class="columns is-centered">
               <div class="column is-half">
-                <div class="image is-16by9">
-                  <video controls>
+                <div class="image" style="text-align:center;">
+                  <video controls style="max-width:100%; height:auto;">
                     <source src="static/videos/dataset1_simulate_raw_motion.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                   </video>
                 </div>
               </div>
               <div class="column is-half">
-                <div class="image is-16by9">
-                  <video controls>
+                <div class="image" style="text-align:center;">
+                  <video controls style="max-width:100%; height:auto;">
                     <source src="static/videos/dataset1_simulate_imitated_motion.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                   </video>
@@ -407,7 +350,7 @@
 
           <p>
             As shown in the video, when the original motion contains physically implausible elements, the simulator corrects them so that the sequence can be executed realistically. Conversely, if a motion is already physically valid, the corrected version closely matches the original. This demonstrates that our annotations provide fine-grained labels which capture physical feasibility more precisely and offer strong supervision for training PP-Motion.
-          </p>
+          </p> 
 
         </div>
       </div>
@@ -425,10 +368,11 @@
             PP-Motion shows clear improvements over previous metrics. Evaluated with three correlation measures—Pearson Linear Correlation Coefficient, Spearman Rank Order Correlation Coefficient, and Kendall Rank Order Correlation Coefficient — it achieves much higher correlation with physical annotations, demonstrating stronger alignment with physics. At the same time, it slightly improves perceptual accuracy compared to human-labeled baselines.
           </p>
 
-          <figure class="image is-3by2">
-            <img src="static/images/result_table.png" alt="Result">
-            <figcaption>Figure: Overview of the PP-Motion framework combining perceptual and physical supervision.</figcaption>
-          </figure>
+          <p style="text-align: center;">
+            <img src="static/images/result_table.png" alt="Results" style="max-width: 100%; height: auto;">
+            <br>
+            <span style="font-size: 1.0rem; color: #555;">Figure: Comparison with previous metrics.</span>
+          </p>
 
           <p>
             To further illustrate how our metric works, consider the comparison between two videos. To human eyes, the left motion looks more reasonable. However, when tested in the physics simulator, the left motion shows clear floating problems, whereas the right motion is more physically plausible. Our metric successfully captures these differences, assigning scores that reflect both perception and physics.
@@ -437,8 +381,8 @@
           <figure>
             <div class="columns is-centered">
               <div class="column is-half">
-                <div class="image is-16by9">
-                  <video controls>
+                <div class="image" style="text-align:center;">
+                  <video controls style="max-width:100%; height:auto;">
                     <source src="static/videos/simulate_a1_better.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                   </video>
@@ -449,8 +393,8 @@
                 </div>
               </div>
               <div class="column is-half">
-                <div class="image is-16by9">
-                  <video controls>
+                <div class="image" style="text-align:center;">
+                  <video controls style="max-width:100%; height:auto;">
                     <source src="static/videos/simulate_a1_worse.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                   </video>
@@ -480,13 +424,15 @@
           <span class="copy-text">Copy</span>
         </button>
       </div>
-      <pre id="bibtex-code"><code>@article{YourPaperKey2024,
-  title={Your Paper Title Here},
-  author={First Author and Second Author and Third Author},
-  journal={Conference/Journal Name},
-  year={2024},
-  url={https://your-domain.com/your-project-page}
-}</code></pre>
+      <pre id="bibtex-code"><code>@misc{zhao2025ppmotionphysicalperceptualfidelityevaluation,
+        title={PP-Motion: Physical-Perceptual Fidelity Evaluation for Human Motion Generation}, 
+        author={Sihan Zhao and Zixuan Wang and Tianyu Luan and Jia Jia and Wentao Zhu and Jiebo Luo and Junsong Yuan and Nan Xi},
+        year={2025},
+        eprint={2508.08179},
+        archivePrefix={arXiv},
+        primaryClass={cs.CV},
+        url={https://arxiv.org/abs/2508.08179}, 
+  }</code></pre>
     </div>
 </section>
 <!--End BibTex citation -->
